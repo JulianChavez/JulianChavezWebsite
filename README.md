@@ -1,2 +1,2 @@
-#Julian's Website
-Just creating a website for me
+# Julian's Website
+Just a website
