@@ -1,13 +1,13 @@
 'use client'; //idk if i really need to add this or not
 import React from 'react';
 
-enum TYPE_EFFECT {
+export enum TYPE_EFFECT {
     WRITING,
     PAUSING,
     DELETING
 }
-const TYPE_INTRVL = 250
-const PAUSING_INTRVL = 1000
+const TYPE_INTRVL = 120
+const PAUSING_INTRVL = 1500
 const DELETING_INTRVL = 100
 
 const useTypedMsg = (messageList: String[]) => {
@@ -49,6 +49,6 @@ const useTypedMsg = (messageList: String[]) => {
                 return () => clearTimeout(timeout)
         }
     }, [messageList, typed, typeEffect, indexList])
-    return typed
+    return [typed, typeEffect]
 }
 export default useTypedMsg
