@@ -37,7 +37,9 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
+
 
 h1 {
   font-size: xx-large;
@@ -53,6 +55,15 @@ h1 {
   padding-left: 10%;
 }
 
-.list-section {
+.header-underline {
   text-decoration: underline;
 }
+
+.Footer-comp {
+  background-color: #D3D3D3;
+  padding: 15;
+  border-top-color: #262626;
+  border-top-style: solid;
+  border-top-width: 1px
+}
+
