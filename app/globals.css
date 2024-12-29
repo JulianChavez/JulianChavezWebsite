@@ -27,6 +27,10 @@
   .cursor:after {
     content: "|";
   }
+  .dash:before{
+    content: "-";
+    padding-right: 1%;
+  }
 }
 
 body {
@@ -47,4 +51,8 @@ h1 {
   width: 50%;
   margin: 0 auto;
   padding-left: 10%;
+}
+
+.list-section {
+  text-decoration: underline;
 }
