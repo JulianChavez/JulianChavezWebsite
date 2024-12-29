@@ -10,8 +10,8 @@ export default function About() {
             <div>
                 <h2 className='center-header'>Who am I?</h2>
                 <div className='center-section'>
-                    <p><span className='font-bold'>School</span>: Currently studying Compute Science (AI/ML) @ University of Maryland, Balitmore County</p>
-                    <p><span className='font-bold'>Current Project</span>: experimenting with building a robot that picks up litter</p>
+                    <p><span className='font-bold'>School</span>: Currently studying Computer Science (AI/ML) @ University of Maryland, Baltimore County</p>
+                    <p><span className='font-bold'>Current Project</span>: Experimenting with building a robot that picks up litter</p>
                     <p><span className='font-bold'>Why</span>: To expand my knowledge with engineering a robot</p>
                 </div>
             </div>
@@ -31,13 +31,13 @@ export default function About() {
                     <h3 className='header-underline'>Projects:</h3>
                     <dl>
                         <dt className='font-bold'>Amazon Alexa Apps</dt>
-                        <dd className='dash'>Created multple Apps:
+                        <dd className='dash'>Created Multiple Apps:
                             <a href='https://bit.ly/julian-alexa-app' target='_blank'> 21 Game</a>,
                             <a href='https://devpost.com/software/alexactivity' target='_blank'> Pomodoro Alexa App</a>.
                             These apps need an update(TO-DO)
                         </dd>
                         <dt className='font-bold'>uTeach</dt>
-                        <dd className='dash'>2024 UMD&apos;s hackathon project: Will create a shell of a power point presentation base on a user prompt or review a user&apos;s powerpoint presentation and voice recording. <a href='https://devpost.com/software/uteach-zjdohi' target='_blank'>uTeach </a></dd>
+                        <dd className='dash'>2024 UMD&apos;s hackathon project: Will create a shell of a PowerPoint presentation base on a user prompt or review a user&apos;s PowerPoint presentation and voice recording. <a href='https://devpost.com/software/uteach-zjdohi' target='_blank'>uTeach </a></dd>
                     </dl>
                 </div>
             </div>

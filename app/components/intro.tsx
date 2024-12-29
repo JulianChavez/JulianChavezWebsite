@@ -2,7 +2,7 @@
 import React from 'react';
 import useTypedMsg, { TYPE_EFFECT } from './typingEffect';
 
-const hiMessage = ["Howdy", "Hello", "Howd", "Greetings", "Hi Engineer", "What's up"]
+const hiMessage = ["Howdy", "Hello", "Hi Sophia", "Greetings", "Hi Engineer", "What's up"]
 
 const Intro = () => {
     //TO-DO: Fix Line in type writing effect | Add pausing when everything is deleted
