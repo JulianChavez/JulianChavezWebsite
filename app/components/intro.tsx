@@ -1,5 +1,5 @@
 'use client';
-import React, { use, useEffect } from 'react';
+import React from 'react';
 import useTypedMsg, { TYPE_EFFECT } from './typingEffect';
 
 const hiMessage = ["Howdy", "Hello", "Howd", "Greetings", "Hi Engineer", "What's up"]
@@ -14,7 +14,7 @@ const Intro = () => {
             <span className={currentEffect == TYPE_EFFECT.DELETING || currentEffect == TYPE_EFFECT.WRITING ? 'cursor' : 'blinking-cursor'}>
                 {typedMsg}
             </span>
-            <span>, I'm Julian</span>
+            <span>, I&apos;m Julian</span>
         </h2>
     )
 }

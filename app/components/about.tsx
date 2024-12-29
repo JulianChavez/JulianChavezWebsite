@@ -26,7 +26,7 @@ export default function About() {
                         <dd className='dash'>Intern as a Software Engineer @ Kodak in Dayton, Ohio</dd>
                         <dd className='dash'>Design and implemented software for inkjet printer technology</dd>
                         <dt className='font-bold'>hackUMBC</dt>
-                        <dd className='dash'>Organized UMBC's flagship hackathon, in 2024 we achieved record-breaking numbers!</dd>
+                        <dd className='dash'>Organized UMBC&apos;s flagship hackathon, in 2024 we achieved record-breaking numbers!</dd>
                     </dl>
                     <h3 className='header-underline'>Projects:</h3>
                     <dl>
@@ -37,7 +37,7 @@ export default function About() {
                             These apps need an update(TO-DO)
                         </dd>
                         <dt className='font-bold'>uTeach</dt>
-                        <dd className='dash'>2024 UMD's hackathon project: Will create a shell of a power point presentation base on a user prompt or review a user's powerpoint presentation and voice recording. <a href='https://devpost.com/software/uteach-zjdohi' target='_blank'>uTeach </a></dd>
+                        <dd className='dash'>2024 UMD&apos;s hackathon project: Will create a shell of a power point presentation base on a user prompt or review a user&apos;s powerpoint presentation and voice recording. <a href='https://devpost.com/software/uteach-zjdohi' target='_blank'>uTeach </a></dd>
                     </dl>
                 </div>
             </div>

@@ -10,7 +10,7 @@ const TYPE_INTRVL = 120
 const PAUSING_INTRVL = 1500
 const DELETING_INTRVL = 100
 
-const useTypedMsg = (messageList: String[]) => {
+const useTypedMsg = (messageList: string[]) => {
     const [indexList, setIndexList] = React.useState(0)
     const [typeEffect, setTypeEffect] = React.useState(TYPE_EFFECT.WRITING)
     const [typed, setTyped] = React.useState('')
