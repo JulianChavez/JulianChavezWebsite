@@ -28,7 +28,7 @@ function Home() {
         //axis helper
         const axesHelper = new THREE.AxesHelper(10);
         scene.add(axesHelper)
-
+        //Test for vercel
         camera.position.z = 10;
         var animate = function () {
             requestAnimationFrame(animate);
