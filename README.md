@@ -1,2 +1,2 @@
 # Julian's Website
-Just a website
+My own website, created by me. It's nothing right now, but will be update accordingly.
