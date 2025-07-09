@@ -7,7 +7,8 @@ import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 
 export default function Loading() {
-    const mountRef = React.useRef<HTMLDivElement>(null);
+    const mountRef = React.useRef<HTMLDivElement>(null);    
+    const [getPosition, setPosition] = React.useState<Number[]>([]);
     
     React.useEffect(() => {
         if (!mountRef.current) return;
@@ -20,6 +21,10 @@ export default function Loading() {
 
         // Set camera position
         camera.position.z = 5;
+
+        //Radius of the circle
+        let angle = 0; 
+        const radius = 2;
 
         const loader = new TTFLoader();
         loader.load("/fonts/Roboto-VariableFont_wdth,wght.ttf", (fontData) => {
@@ -64,17 +69,41 @@ export default function Loading() {
                 
                 // Position character
                 mesh.position.set(xOffset, 0, 0);
+                getPosition.push(xOffset);
                 scene.add(mesh);
                 
                 // Move position for next character
                 xOffset += width + letterSpacing;
             });
+
+            //Axis Helper
+            const axesHelper = new THREE.AxesHelper(5);
+            scene.add(axesHelper);  
+
             
             // Render the scene
             function animate() {
                 requestAnimationFrame(animate);
+                animateLetters();
                 renderer.render(scene, camera);
             }
+
+            let angleTest = getPosition[0];  
+            function animateLetters(){
+                //Lets pick the letter 'L' to move
+                // console.log(meshes);
+                
+                //Radius = 3
+                //Angle = 0
+                const radiusTest = 4;
+                
+
+                angle += 0.01;
+                angleTest += 0.01;
+                meshes[0].position.x = radiusTest * Math.cos(angleTest);
+                meshes[0].position.y = radiusTest * Math.sin(angleTest);
+            }
+            // Start the animation
             animate();
         });
 
